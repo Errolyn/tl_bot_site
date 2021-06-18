@@ -36,7 +36,7 @@ function App() {
 
   return (
     <div className="App">TimeLord
-      <Login />
+      <Login /> {/* Should probably change to a log out button after successful login */}
       <GuildsSelector guilds={guild} /> {/* This needs to be conditional on successful login and auth with discord. Also the guild list needs to be passed here. */}
     </div>
   );
