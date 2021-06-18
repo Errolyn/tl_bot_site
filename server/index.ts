@@ -43,6 +43,8 @@ app.get('/api/auth/discord/callback', passport.authenticate('discord', {
 
 app.get('/api/auth/whoami',(req, res) => { res.json(req.user) } )
 
+// app.get('/api/auth/guilds', (req, res) => {res.json(req.user.guilds)})
+
 app.listen(PORT, () => {
   console.log(`⚡️[server]: Server is running at https://localhost:${PORT}`);
 });
